@@ -1,0 +1,39 @@
+{
+  "name": "lonelygames-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "nodemon": "^1.18.11",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.6.0"
+  },
+  "scripts": {
+    "deploy": "npx webpack",
+    "live": "npx webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akarras/lonelygames.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akarras/lonelygames/issues"
+  },
+  "homepage": "https://github.com/akarras/lonelygames#readme"
+}
