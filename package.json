@@ -20,10 +20,12 @@
     "webpack-dev-server": "^3.3.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "mini-css-extract-plugin": "^0.6.0"
   },
   "scripts": {
-    "deploy": "npx webpack",
+    "build": "npx webpack",
+    "deploy": "gh-pages -d dist",
     "live": "npx webpack-dev-server"
   },
   "repository": {

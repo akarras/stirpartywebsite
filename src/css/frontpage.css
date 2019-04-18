@@ -1,0 +1,55 @@
+body {
+  background-color: gray;
+}
+.section {
+  padding: 12rem 0 10rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .section {
+    padding: 14rem 0 15rem;
+  }
+}
+
+
+@media (mind-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+}
+
+
+
+.introduction {
+  background-image: url(/images/stirparty.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  color: aliceblue;
+  height:100vh;
+  font-size: 1.7em;
+  padding: 0;
+}
+
+.social {
+  background-color: black;
+  color: aliceblue;
+}
+
+.nav {
+  opacity: .75;
+  background-color: #000000;
+}
+
+.footer {
+  background-color: #0B0A0D;
+  color: #888888;
+}
