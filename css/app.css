@@ -40,6 +40,9 @@ body {
 }
 
 .social {
+  background-image: url(/images/galaxy_rainbow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: black;
   color: aliceblue;
 }
