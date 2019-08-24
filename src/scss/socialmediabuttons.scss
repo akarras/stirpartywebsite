@@ -1,0 +1,56 @@
+$fa-path: "~@fortawesome/fontawesome-free/";
+$fa-font-path: "/webfonts" !default;
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+$button-scale: .75;
+.fa-social-button {
+  @extend %fa-icon;
+  @extend .fab;
+  border-radius: 50%;
+  width: 70px * $button-scale;
+  margin: 2px 4px;
+  font-size: 30px * $button-scale;
+  padding: 20px * $button-scale;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.twitter {
+  @extend .fa-social-button;
+  background: #55ACEE;
+  &:before {
+    content: fa-content($fa-var-twitter);
+    color: white;
+  }
+}
+
+.reddit {
+  @extend .fa-social-button;
+  background: #ff5700;
+  &:before {
+    content: fa-content($fa-var-reddit);
+    color: white;
+  }
+}
+
+.discord {
+  @extend .fa-social-button;
+  background: #7289da;
+  &:before {
+    content: fa-content($fa-var-discord);
+    color: white;
+  }
+}
+
+.steam {
+  @extend .fa-social-button;
+  background: #171a21;
+  &:before {
+    content: fa-content($fa-var-steam);
+    color: white;
+  }
+}

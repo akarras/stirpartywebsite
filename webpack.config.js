@@ -24,16 +24,27 @@ module.exports = {
       }, {
         test: /\.css$/,
         use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
-      }, 
-      {
-        test: /\.(html|json|txt|dat|gif|jpg|png|svg|eot|ttf|fbx|glb|gltf|ogg)$/i,
+      }, {
+        test: /\.scss$/,
+        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+      }, {
+        test: /\.(html|json|txt|dat|gif|jpg|png|svg|eot|ttf|woff|woff2|fbx|glb|gltf|ogg|mp4|in)$/i,
         use: [{
           loader: 'file-loader',
           options: { 
             name: '[name].[ext]',
             outputPath: (url, resourcePath, context) => {
               //console.log(url);
-              return resourcePath.includes("/images/")||resourcePath.includes("\\images\\") ?`images/${url}` : url;
+              if (resourcePath.includes("/images/")||resourcePath.includes("\\images\\")) {
+                return `images/${url}`;
+              } else if (resourcePath.includes("/webfonts/")||resourcePath.includes("\\webfonts\\")) {
+                return `webfonts/${url}`;
+              } else if (resourcePath.includes("/videos/")||resourcePath.includes("\\videos\\")) {
+                return `videos/${url}`;
+              } else if (resourcePath.includes(".in")) {
+                return url.replace(/\.in$/i, "");
+              }
+              return url;
             }
           }
         }]
