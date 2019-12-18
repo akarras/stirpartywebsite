@@ -28,7 +28,7 @@
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
     <nav class="navbar d-flex justify-content-end">
@@ -90,31 +90,31 @@
         <i>please note:</i> all game-play pictured here was taken from an alpha
         build<br />
         <div class="row">
-          <div class="col">
+          <div class="col-md-4">
             <h4>Asteroids</h4>
             defend a sun in a distant galaxy from the oncoming asteroid belt
             <img src="images/alpha_asteroids_gameplay_small.gif" width="100%" />
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <h4>Bomb Tag</h4>
             tag but with way higher stakes!
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <h4>Color Fight</h4>
             color as many cubes as you can
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-md-4">
             <h4>Musical Chickens</h4>
             a twist on the classical musical chairs, but with annoying little
             chickens that run away just before the end of the round and get you
             killed. >:c
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <h4>Most Valuable Burger</h4>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <h4>Fishing</h4>
             catch as many fish as possible before the timer runs out
             <img src="images/alpha_fishing_gameplay_small.gif" width="100%" />
@@ -122,61 +122,70 @@
         </div>
       </div>
     </div>
-    <div class="section branding">
-      <div class="container  text-center">
-        <div class="row nicerow">
-          <div class="col">
-            <h5>built using Unreal Engine 4</h5>
-            <!--
-              FILL OUT UNREAL ENGINE TRADEMARK BEFORE USING THIS
-              <img src="./images/Unreal_Engine_White.png" height="256" width="256"/>-->
-          </div>
-          <div class="col">
-            <a href="https://store.steampowered.com/app/658070/Stir_Party/">
-              <h4>coming to steam 2020</h4>
-              <img class="imgCenter" src="./images/steam_vertical.png" />
-            </a>
-          </div>
-          <div style="text-align:center" class="col">
-            <h2>Windows</h2>
-            <h3>+</h3>
-            <h2>Linux</h2>
-          </div>
-        </div>
-        <div class="row">
-          <iframe
-            src="https://store.steampowered.com/widget/658070/"
-            frameborder="0"
-            width="100%"
-            height="190"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-    <div class="section socialMedia">
+    <div class="section socialMedia 100vh">
       <div class="container">
+        <h3>Community</h3>
         <div class="row">
-          <div class="col">
-            <h3>Community</h3>
+          <div class="col-md-5">
             <p class="text-align-center">
-              join the discord and engage with the community
+              join the <font color="#7289da"><b>Discord</b></font> and engage with the community
               as the game evolves, more and more the community
               will be asked for feedback via our polls.
               keep up with the latest developments on the games with patch notes.<br/>
-              all notifications are optional, and we promise to not spam you. ♥
+              all notifications are optional, and we <font color="red">promise</font> to not spam you.<br>
+              Mr. Shep our bot will take great care of you.
             </p>
           </div>
-          <div class="col">
+          <div class="col-md-7">
             <h4>Discord</h4>
             <iframe
               src="https://discordapp.com/widget?id=557049024314605578&theme=dark"
-              width="350"
+              width="100%"
               height="500"
               allowtransparency="true"
               frameborder="0"
             ></iframe>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="features min-vh-100">
+      <div class="container p-5">
+        <h2>Potential features</h2>
+        <i>Essentially all of these are at different stages of implementation. Some of them might end up
+          being cut, and not included in the final game. This may happen for any number of reasons.
+          Actions speak louder than words, but one or more of these will <font color="red">probably be cut</font>.
+        </i>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Steam Workshop</h3>
+          </div>
+          <div class="col-md-4">
+            <h3>Achievements</h3>
+          </div>
+          <div class="col-md-4">
+            <h3>Unlockable Hats</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="branding">
+      <div class="container p-5">
+        <h3>Note the developer</h3>
+        <p>
+          If you've made it this far and you like reading words, I'd like talk a little about the game.<br>
+          Stir Party has been a passion project for me for since June 2017.
+          When Steam opened up their marketplace, I knew I wanted to self publish a game. I landed
+          on doing a party game when I realized I wanted to make a multiplayer game, and I couldn't tie
+          myself down to one idea. Having multiple modes freed me to implement whatever kind of gamemode
+          I dreamed up, and it's been a blast. Over the past three years I've grown as a developer, artist, and person.
+          <br>
+          However well Stir Party does, I just wanted to do it, and actually reaching people was an after thought.
+          The fact you're even reading this means everything to me. <br>Thank you.
+          <br>
+          <br>
+          <h5>chew</h5>
+        </p>
       </div>
     </div>
     <div class="section footer">
@@ -205,7 +214,7 @@
         ©2019 Lonely Games
       </div>
     </div>
-
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"233d1116165e1d535ef983d90","lid":"76e0bed1b5","uniqueMethods":true}) })</script>
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>
